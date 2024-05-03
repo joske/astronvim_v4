@@ -11,16 +11,11 @@ return {
   { import = "astrocommunity.editing-support/cutlass-nvim" },
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   { import = "astrocommunity.pack.rust" },
-  { import = "astrocommunity.pack.bash" },
-  { import = "astrocommunity.pack.yaml" },
-  { import = "astrocommunity.pack.json" },
-  { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.code-runner.overseer-nvim" },
   { import = "astrocommunity.colorscheme.vscode-nvim" },
   { import = "astrocommunity.colorscheme.github-nvim-theme" },
   { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
   { import = "astrocommunity.recipes.heirline-vscode-winbar" },
-  { import = "astrocommunity.note-taking.neorg" },
   {
     "AstroNvim/astrolsp",
     optional = true,
@@ -35,26 +30,6 @@ return {
               cargo = {
                 features = "all",
               },
-            },
-          },
-        },
-      },
-    },
-  },
-  {
-    "nvim-neorg/neorg",
-    opts = {
-      load = {
-        ["core.journal"] = {
-          config = {
-            workspace = "notes",
-            dir = "~/Google Drive/Notes/Journal",
-          },
-        },
-        ["core.dirman"] = { -- Manages Neorg workspaces
-          config = {
-            workspaces = {
-              notes = "~/Google Drive/Notes",
             },
           },
         },
