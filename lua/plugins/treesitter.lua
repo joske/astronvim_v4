@@ -14,7 +14,6 @@ return {
       auto_install = true, -- enable/disable automatic installation of detected languages
       ensure_installed = {
         "lua",
-        "vim",
         -- add more arguments for adding more treesitter parsers
       },
     },
