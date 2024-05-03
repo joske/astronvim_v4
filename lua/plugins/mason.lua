@@ -10,6 +10,8 @@ return {
       ensure_installed = {
         "lua_ls",
         -- add more arguments for adding more language servers
+        "rust_analyzer",
+        "bashls",
       },
     },
   },
@@ -21,14 +23,8 @@ return {
       ensure_installed = {
         "stylua",
         -- add more arguments for adding more null-ls sources
-        "biome",
-        "prettier",
         "stylua",
-        "clang-format",
-        "rubocop",
         "shfmt",
-        "yamlfmt",
-        "xmlformatter",
         "shellcheck",
       },
     },
@@ -38,7 +34,6 @@ return {
     -- overrides `require("mason-nvim-dap").setup(...)`
     opts = {
       ensure_installed = {
-        "python",
         -- add more arguments for adding more debuggers
         "codelldb",
       },
