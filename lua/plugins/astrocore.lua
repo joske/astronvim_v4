@@ -128,7 +128,6 @@ return {
         ["<leader>gC"] = { "<cmd>DiffviewToggleCache<cr>", desc = "Git Diff Toggle Cache" },
         ["<leader>gS"] = { "<cmd>DiffviewToggleSigns<cr>", desc = "Git Diff Toggle Signs" },
         ["<leader>gT"] = { "<cmd>DiffviewToggle<cr>", desc = "Git Diff Toggle" },
-        ["<leader>gm"] = { "<cmd>MarkdownPreviewToggle<cr>", desc = "Markdown Preview" },
 
         -- Todo
         ["<leader>T"] = { name = "TODOs" },

@@ -7,12 +7,7 @@ return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
   -- import/override with your plugins folder
-  { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.pack.rust" },
-  { import = "astrocommunity.pack.bash" },
-  { import = "astrocommunity.pack.yaml" },
-  { import = "astrocommunity.pack.json" },
-  { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   { import = "astrocommunity.colorscheme.vscode-nvim" },
   { import = "astrocommunity.colorscheme.github-nvim-theme" },
