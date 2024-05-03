@@ -134,7 +134,6 @@ return {
         ["<Leader>gS"] = { "<cmd>DiffviewToggleSigns<cr>", desc = "Git Diff Toggle Signs" },
         ["<Leader>gT"] = { "<cmd>DiffviewToggle<cr>", desc = "Git Diff Toggle" },
         ["<Leader>gm"] = { "<cmd>MarkdownPreviewToggle<cr>", desc = "Markdown Preview" },
-
         -- Todo
         ["<Leader>T"] = { desc = "TODOs" },
         ["<Leader>Tt"] = { "<cmd>TodoTelescope<cr>", desc = "Open TODOs in Telescope" },
