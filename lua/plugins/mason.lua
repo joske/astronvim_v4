@@ -11,23 +11,11 @@ return {
       ensure_installed = {
         -- install language servers
         "lua-language-server",
-        "texlab",
 
         -- install formatters
         "stylua",
-        "biome",
-        "prettier",
-        "stylua",
-        "clang-format",
-        "rubocop",
-        "shfmt",
-        "yamlfmt",
-        "xmlformatter",
-        "shellcheck",
-        "latexindent",
 
         -- install debuggers
-        "debugpy",
         "codelldb",
 
         -- install any other package
