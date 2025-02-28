@@ -20,3 +20,17 @@ vim.cmd [[nnoremap <expr> <silent> 0 col('.') == match(getline('.'),'S')+1 ? '0'
 require("litee.lib").setup {}
 -- configure litee-calltree.nvim
 require("litee.calltree").setup {}
+local lspconfig = require "lspconfig"
+local configs = require "lspconfig.configs"
+
+if not configs.rustowl then
+  configs.rustowl = {
+    default_config = {
+      cmd = { "cargo", "owlsp" },
+      root_dir = lspconfig.util.root_pattern ".git",
+      filetypes = { "rust" },
+    },
+    idle_time = 2000,
+  }
+end
+lspconfig.rustowl.setup {}
