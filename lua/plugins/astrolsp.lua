@@ -99,6 +99,13 @@ return {
     on_attach = function(client, bufnr)
       -- this would disable semanticTokensProvider for all clients
       -- client.server_capabilities.semanticTokensProvider = nil
+      local bufname = vim.api.nvim_buf_get_name(bufnr)
+
+      -- Disable formatting specifically for PKGBUILD files
+      if bufname:match "PKGBUILD$" then
+        client.server_capabilities.documentFormattingProvider = false
+        client.server_capabilities.documentRangeFormattingProvider = false
+      end
     end,
   },
 }
