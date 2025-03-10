@@ -89,6 +89,10 @@ return {
         ["<leader>lcc"] = { function() require("litee.calltree").close_calltree() end, desc = "Close Calltree" },
         ["<leader>lcp"] = { function() require("litee.calltree").popout_to() end, desc = "Popout Calltree" },
 
+        -- dir telescope
+        ["<leader>fd"] = { "<cmd>Telescope dir live_grep<CR>", desc = "Find Directory" },
+        ["<leader>pd"] = { "<cmd>Telescope dir find_files<CR>", desc = "Find Files in Directory" },
+
         -- Rust
         ["<leader>r"] = { name = " Rust Tools" },
         ["<leader>ra"] = { function() vim.cmd.RustLsp "codeAction" end, desc = "Rust Code Action" },
