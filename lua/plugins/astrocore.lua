@@ -78,12 +78,12 @@ return {
         ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
 
         -- mine
-        ["<Leader>m"] = { name = "󱁤 Compiler" },
+        ["<Leader>m"] = { desc = "󱁤 Compiler" },
         ["<Leader>mt"] = { "<cmd>TexlabBuild<cr>", desc = "LaTeX" },
-        ["<Leader>mc"] = { name = "Cargo" },
+        ["<Leader>mc"] = { desc = "Cargo" },
         ["<Leader>mcb"] = { "<cmd>terminal cargo build<cr>", desc = "Cargo Build" },
         ["<Leader>mcr"] = { "<cmd>terminal cargo run<cr>", desc = "Cargo Run" },
-        ["<Leader>lc"] = { name = "Calls" },
+        ["<Leader>lc"] = { desc = "Calls" },
         ["<Leader>lci"] = { function() vim.lsp.buf.incoming_calls() end, desc = "Incoming Calls" },
         ["<Leader>lco"] = { function() vim.lsp.buf.outgoing_calls() end, desc = "Outgoing Calls" },
         ["<Leader>lcc"] = { function() require("litee.calltree").close_calltree() end, desc = "Close Calltree" },
@@ -94,7 +94,7 @@ return {
         ["<Leader>pd"] = { "<cmd>Telescope dir find_files<CR>", desc = "Find Files in Directory" },
 
         -- Rust
-        ["<Leader>r"] = { name = " Rust Tools" },
+        ["<Leader>r"] = { desc = " Rust Tools" },
         ["<Leader>ra"] = { function() vim.cmd.RustLsp "codeAction" end, desc = "Rust Code Action" },
         ["<Leader>rm"] = { function() vim.cmd.RustLsp "expandMacro" end, desc = "Expand Macro" },
         ["<Leader>rC"] = { function() vim.cmd.RustLsp "openCargo" end, desc = "Open Cargo.toml" },
@@ -107,7 +107,7 @@ return {
         ["<Leader>rj"] = { function() vim.cmd.RustLsp "joinLines" end, desc = "Join Lines" },
         ["<Leader>re"] = { function() vim.cmd.RustLsp "explainError" end, desc = "Explain Error" },
         -- Crates
-        ["<Leader>rc"] = { name = "Crates" },
+        ["<Leader>rc"] = { desc = "Crates" },
         ["<Leader>rcr"] = { function() require("crates").reload() end, desc = "Reload Crates" },
         ["<Leader>rcf"] = { function() require("crates").show_features_popup() end, desc = "Show Features" },
         ["<Leader>rcv"] = { function() require("crates").show_versions_popup() end, desc = "Show Versions" },
@@ -121,7 +121,7 @@ return {
         ["<Leader>rcD"] = { function() require("crates").open_documentation() end, desc = "Open Documentation" },
         ["<Leader>rcC"] = { function() require("crates").open_crates_io() end, desc = "Open crates.io" },
         -- Trouble
-        ["<Leader>x"] = { name = "Trouble" },
+        ["<Leader>x"] = { desc = "Trouble" },
         ["<Leader>xx"] = { "<cmd>Trouble diagnostics toggle<cr>", desc = "Trouble" },
         ["<Leader>xd"] = {
           "<cmd>Trouble diagnostics toggle filter.buf=0<cr>",
@@ -134,7 +134,7 @@ return {
           desc = "Trouble LSP References",
         },
         -- Git
-        ["<Leader>g"] = { name = "Git" },
+        ["<Leader>g"] = { desc = "Git" },
         ["<Leader>gs"] = { "<cmd>Git<cr>", desc = "Git Status" },
         ["<Leader>gv"] = { "<cmd>Git blame<cr>", desc = "Git Blame" },
         ["<Leader>gB"] = { "<cmd>ToggleBlameLine<CR>", desc = "Git Blame Line" },
@@ -149,7 +149,7 @@ return {
         ["<Leader>gm"] = { "<cmd>MarkdownPreviewToggle<cr>", desc = "Markdown Preview" },
 
         -- Todo
-        ["<Leader>T"] = { name = "TODOs" },
+        ["<Leader>T"] = { desc = "TODOs" },
         ["<Leader>Tt"] = { "<cmd>TodoTelescope<cr>", desc = "Open TODOs in Telescope" },
         ["<Leader>Tq"] = { "<cmd>TodoQuickFix<cr>", desc = "Open TODOs in QuickFix" },
         ["<Leader>Tx"] = { "<cmd>TodoTrouble<cr>", desc = "Open TODOs in Trouble" },
