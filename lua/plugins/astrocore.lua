@@ -106,6 +106,7 @@ return {
         ["<Leader>rf"] = { function() vim.cmd.RustLsp "workspaceSymbol" end, desc = "Find Symbol" },
         ["<Leader>rj"] = { function() vim.cmd.RustLsp "joinLines" end, desc = "Join Lines" },
         ["<Leader>re"] = { function() vim.cmd.RustLsp "explainError" end, desc = "Explain Error" },
+        ["<Leader>ro"] = { function() require("rustowl").rustowl_cursor() end, desc = "Explain Error" },
         -- Crates
         ["<Leader>rc"] = { desc = "Crates" },
         ["<Leader>rcr"] = { function() require("crates").reload() end, desc = "Reload Crates" },
