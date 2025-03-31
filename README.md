@@ -10,7 +10,7 @@ A template for getting started with [AstroNvim](https://github.com/AstroNvim/Ast
 
 To use this config, make sure to have the following packages available on the system:
 
-- neovim v0.9+ (duh)
+- neovim v0.10+ (0.11 preferred)
 - rust/rust-analyzer/rustfmt
 - nodejs
 - npm
@@ -25,14 +25,17 @@ To use this config, make sure to have the following packages available on the sy
 - llvm/clang/clangd/clang-format
 - yarn
 - optional: gdu, bottom
-  
+
 For Arch Linux:
+
 ```bash
 pacman -S --needed neovim rustup nodejs npm zip unzip gzip fzf ripgrep git lazygit llvm lldb yarn gdu bottom ruby texlive-latexrecommended
 ```
+
 For the minimal branch:
+
 ```bash
-pacman -S --needed neovim rustup nodejs npm zip unzip gzip fzf ripgrep git lazygit llvm lldb yarn gdu bottom 
+pacman -S --needed neovim rustup nodejs npm zip unzip gzip fzf ripgrep git lazygit llvm lldb yarn gdu bottom
 ```
 
 #### Make a backup of your current nvim and shared folder
