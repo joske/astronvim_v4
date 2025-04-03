@@ -104,6 +104,12 @@ return {
         client.server_capabilities.documentFormattingProvider = false
         client.server_capabilities.documentRangeFormattingProvider = false
       end
+      -- Also disable if project root contains "snarkOS"
+      local root_dir = client.config.root_dir or ""
+      if (root_dir:match "snarkOS" or root_dir:match "snarkVM") and bufname:match "Cargo.toml" then
+        client.server_capabilities.documentFormattingProvider = false
+        client.server_capabilities.documentRangeFormattingProvider = false
+      end
     end,
   },
 }
