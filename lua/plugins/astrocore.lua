@@ -22,19 +22,6 @@ return {
       virtual_text = true,
       underline = true,
     },
-    -- passed to `vim.filetype.add`
-    filetypes = {
-      -- see `:h vim.filetype.add` for usage
-      extension = {
-        foo = "fooscript",
-      },
-      filename = {
-        [".foorc"] = "fooscript",
-      },
-      pattern = {
-        [".*/etc/foo/.*"] = "fooscript",
-      },
-    },
     -- vim options can be configured here
     options = {
       opt = { -- vim.opt.<key>
@@ -89,10 +76,6 @@ return {
         ["<Leader>lcc"] = { function() require("litee.calltree").close_calltree() end, desc = "Close Calltree" },
         ["<Leader>lcp"] = { function() require("litee.calltree").popout_to() end, desc = "Popout Calltree" },
 
-        -- dir telescope
-        ["<Leader>fd"] = { "<cmd>Telescope dir live_grep<CR>", desc = "Find Directory" },
-        ["<Leader>pd"] = { "<cmd>Telescope dir find_files<CR>", desc = "Find Files in Directory" },
-
         -- Rust
         ["<Leader>r"] = { desc = " Rust Tools" },
         ["<Leader>ra"] = { function() vim.cmd.RustLsp "codeAction" end, desc = "Rust Code Action" },
@@ -106,7 +89,6 @@ return {
         ["<Leader>rf"] = { function() vim.cmd.RustLsp "workspaceSymbol" end, desc = "Find Symbol" },
         ["<Leader>rj"] = { function() vim.cmd.RustLsp "joinLines" end, desc = "Join Lines" },
         ["<Leader>re"] = { function() vim.cmd.RustLsp "explainError" end, desc = "Explain Error" },
-        -- ["<Leader>ro"] = { function() require("rustowl").rustowl_cursor() end, desc = "Explain Error" },
 
         -- Crates
         ["<Leader>rc"] = { desc = "Crates" },
