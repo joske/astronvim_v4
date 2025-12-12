@@ -31,6 +31,11 @@ return {
       ---@diagnostic disable: missing-fields
       config = {
         rust_analyzer = {
+          cmd = (function()
+            local ra = vim.fn.systemlist({ "rustup", "which", "rust-analyzer" })[1]
+            if ra and ra ~= "" and not ra:match "not found" then return { ra } end
+            return { "rustup", "run", "stable", "rust-analyzer" }
+          end)(),
           settings = {
             ["rust-analyzer"] = {
               cargo = {
