@@ -42,7 +42,7 @@ return {
                 features = "all",
               },
               procMacro = {
-                enable = false,
+                enable = true,
               },
             },
           },
