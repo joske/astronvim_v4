@@ -7,6 +7,7 @@ vim.cmd [[nnoremap <expr> <silent> 0 col('.') == match(getline('.'),'\\S')+1 ? '
 require("litee.lib").setup {}
 -- configure litee-calltree.nvim
 require("litee.calltree").setup {}
+require("multigrep").setup()
 -- local lspconfig = require "lspconfig"
 -- local configs = require "lspconfig.configs"
 
