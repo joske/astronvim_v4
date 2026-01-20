@@ -29,13 +29,15 @@ To use this config, make sure to have the following packages available on the sy
 For Arch Linux:
 
 ```bash
-pacman -S --needed neovim rustup nodejs npm zip unzip gzip fzf ripgrep git lazygit llvm lldb yarn gdu bottom ruby texlive-latexrecommended
+pacman -S --needed neovim rustup nodejs npm zip unzip gzip fzf ripgrep git lazygit llvm lldb yarn gdu \
+bottom ruby texlive-latexrecommended seleneghostscript curl wget python-pip imagemagick fd xclip wl-clipboard tree-sitter
 ```
 
 For the minimal branch:
 
 ```bash
-pacman -S --needed neovim rustup nodejs npm zip unzip gzip fzf ripgrep git lazygit llvm lldb yarn gdu bottom
+pacman -S --needed neovim rustup nodejs npm zip unzip gzip fzf ripgrep git lazygit llvm lldb yarn gdu \
+bottom selene ghostscript curl wget python-pip imagemagick fd xclip wl-clipboard tree-sitter
 ```
 
 #### Make a backup of your current nvim and shared folder
