@@ -73,8 +73,6 @@ return {
         ["<Leader>lc"] = { desc = "Calls" },
         ["<Leader>lci"] = { function() vim.lsp.buf.incoming_calls() end, desc = "Incoming Calls" },
         ["<Leader>lco"] = { function() vim.lsp.buf.outgoing_calls() end, desc = "Outgoing Calls" },
-        ["<Leader>lcc"] = { function() require("litee.calltree").close_calltree() end, desc = "Close Calltree" },
-        ["<Leader>lcp"] = { function() require("litee.calltree").popout_to() end, desc = "Popout Calltree" },
 
         -- Rust
         ["<Leader>r"] = { desc = " Rust Tools" },
